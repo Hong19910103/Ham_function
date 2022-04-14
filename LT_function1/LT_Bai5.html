@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tao mang</title>
+</head>
+<body>
+<script>
+    let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let star2 = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function changeStar() {
+        let input = prompt("nhap tem ngoi sao vao day");
+        let index1 = -1;
+        for (let i = 0; i < star1.length; i++) {
+            if (input === star1[i]) {
+                index1 = i;
+                break;
+            }
+        }
+        if (index1 === -1) {
+            let a="khong tim thay"
+            alert(a);
+
+        } else {
+            alert(star2[index1]);
+        }
+
+
+    }
+    changeStar()
+</script>
+
+</body>
+</html>

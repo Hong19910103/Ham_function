@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra xem mang co chua ki tu ko</title>
+</head>
+<body>
+<script>
+    let arr=[1,2,2,3,4,"u","hoa",9,6]
+    function checkInput(){
+        let input=prompt("nhap ki tu bat ky");
+        let count = 1;
+        let check = false;
+        for (let i = 0; i < arr.length; i++) {
+            if (input===arr[i]){
+               count++;
+               check=true;
+            }
+        }
+        if (check){
+           alert(count);
+        }
+    }
+    checkInput()
+
+
+</script>
+
+</body>
+</html>

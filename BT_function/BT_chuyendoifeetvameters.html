@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa Feet và Meters</title>
+    <style>
+        table{
+            border: black ;
+            background-color: aqua;
+        }
+        td{
+            border: red;
+            width: 100px;
+
+        }
+    </style>
+</head>
+<body>
+<h2>Chuyển đổi độ dài</h2>
+<table >
+    <tr>
+        <td> Nhập feet:</td>
+        <td><input type="text" id="input1"></td>
+        <td>
+            <button onclick="feetToMeter()"> click</button>
+        </td>
+        <td id="result1"></td>
+    </tr>
+    <tr>
+        <td>Nhập meters:</td>
+        <td><input type="text" id="input2"></td>
+        <td>
+            <button onclick="meterToFeet()"> click</button>
+        </td>
+        <td id="result2" ></td>
+    </tr>
+</table>
+<script>
+    function feetToMeter() {
+        let feet = document.getElementById('input1').value;
+        let meter = 0.305 * feet;
+        document.getElementById('result1').innerHTML = `meter la: ${meter}`;
+    }
+    function meterToFeet(){
+        let meter=document.getElementById('input2').value;
+        let feet=3.279*meter;
+        document.getElementById('result2').innerHTML=`feet la: ${feet}`;
+    }
+</script>
+
+</body>
+</html>
